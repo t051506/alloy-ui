@@ -6,12 +6,16 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
       '/': {
+        /**
+         * 接口地址
+         *  @see src/main.js
+         *    属性：axios.defaults.baseURL
+         */
         target: 'http://alloy-gateway:9999',//后端接口地址
         changeOrigin: true,//是否允许跨越
         pathRewrite: {
