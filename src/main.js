@@ -13,7 +13,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap-vue/dist/bootstrap-vue-icons.min.css'
 import {BootstrapVue, IconsPlugin} from 'bootstrap-vue'
 
-axios.defaults.baseURL = 'http://alloy-gateway:9999/';//配置请求的根路径
+axios.defaults.baseURL = 'http://192.168.75.21:9999/';//配置请求的根路径
 axios.interceptors.request.use(config => {
   if (config.url.indexOf("auth/oauth/token") !== -1) {
     config.headers.Authorization = "Basic YWxsb3k6YWxsb3k=";

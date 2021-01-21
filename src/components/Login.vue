@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-form class="form" @submit="onSubmit" @reset="onReset" v-if="show">
+    <b-form  @submit="onSubmit" @reset="onReset" v-if="show">
       <b-form-group id="input-group-1" label="用户名:" label-for="input-1"
                     description="We'll never share your account with anyone else.">
         <b-form-input

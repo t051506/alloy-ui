@@ -16,7 +16,7 @@ module.exports = {
          *  @see src/main.js
          *    属性：axios.defaults.baseURL
          */
-        target: 'http://alloy-gateway:9999',//后端接口地址
+        target: 'http://localhost:9999',//后端接口地址
         changeOrigin: true,//是否允许跨越
         pathRewrite: {
           '^/': '/', //重写,
